@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Triple Espresso</title>
-  <link rel="icon" href="./favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@1,400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-  <header class="header">
-    <img src="./images/logo_coffeeshop_dark.svg" alt="Logotipo Triple Espresso" class="logo">
-
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="#reservation" class="nav-link">Reservar una mesa</a></li>
-        <li><a href="#footer" class="nav-link">Contactos</a></li>
-      </ul>
-    </nav>
-
-    <h1 class="header-title">
-      <span class="span-accent">Café de especialidad</span>
-      en Triple Peaks
-    </h1>
-
-    <p class="header-description">
-      ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café para darte energía y motivar tu creatividad.
-    </p>
-
-    <img src="./images/inside_coffee_shop.png" alt="Ilustración del interior de la cafetería" class="header-image">
-
-    <div class="header-info">
-      <div class="header-hours">
-        <p class="info-text">Horario:</p>
-        <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
-        <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Dulce Agra, desarrolladora web en formación con enfoque en inteligencia artificial.">
+    <meta name="author" content="Dulce Agra">
+    <title>Dulce Agra — Portafolio</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body class="page">
+    <header class="profile">
+      <img class="profile__photo" src="./images/perfil-web.jpg" alt="Dulce Agra al aire libre junto a un lago">
+      <div class="profile__content">
+        <h1 class="profile__title">Dulce <span class="profile__surname">Agra</span></h1>
+        <p class="profile__subtitle">Desarrolladora web en formación <span class="profile__separator">|</span> <span class="profile__stack">Futura AI Web Developer</span></p>
+        <p class="profile__description">Me estoy formando como desarrolladora web con enfoque en inteligencia artificial. Actualmente estudio HTML y CSS y estoy aprendiendo a utilizar Figma para transformar diseños en páginas web. Mi siguiente paso es aprender JavaScript para crear experiencias interactivas. Busco desarrollar sitios atractivos, responsivos y funcionales mientras avanzo hacia mi objetivo de ser AI Web Developer.</p>
+        <nav class="profile__links" aria-label="Enlaces del perfil">
+          <!-- Pendiente: incorporar el archivo de CV cuando esté disponible. -->
+          <a class="profile__link" href="#">Descargar CV</a>
+          <a class="profile__link" href="https://github.com/dulce152a">Enlace a GitHub</a>
+          <a class="profile__link" href="#contact">Hablemos</a>
+        </nav>
       </div>
-      <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
-    </div>
-  </header>
-
-  <main class="content">
-    <section class="reservation" id="reservation">
-      <h2 class="reservation__title" id="reservation-title">Reservar una mesa</h2>
-      <form class="reservation__form form">
-        <fieldset class="form__fieldset">
-          <label class="form__label" for="name">Nombre *</label>
-          <input class="form__input" id="name" name="name" type="text" placeholder="Nombre" required>
-
-          <label class="form__label" for="guests">Número de comensales *</label>
-          <input class="form__input" id="guests" name="guests" type="number" min="1" max="8" placeholder="1-8" required>
-
-          <label class="form__label" for="datetime">Fecha y hora *</label>
-          <input class="form__input" id="datetime" name="datetime" type="datetime-local" required>
-
-          <label class="form__label" for="email">Tu correo electrónico *</label>
-          <input class="form__input" id="email" name="email" type="email" placeholder="email@email.com" required>
-        </fieldset>
-        <button class="form__button" type="submit">Reservar una mesa</button>
-        <label class="form__label form__label_type_checkbox" for="terms">
-          <input class="form__checkbox" id="terms" name="terms" type="checkbox" required>
-          Acepto los términos de uso
-        </label>
-      </form>
-    </section>
-  </main>
-  <footer class="footer" id="footer">
-    <div class="footer__circle"></div>
-    <div class="footer__columns">
-      <img class="footer__logo" src="./images/logo_coffeeshop_light.svg" alt="Logotipo Triple Espresso">
-      <div class="footer__social">
-        <h2 class="footer__social-heading">Redes sociales</h2>
-        <ul class="footer__list">
-          <li class="footer__list-item">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-icon" src="./images/facebook_white.svg" alt="">
-              Facebook
-            </a>
-          </li>
-          <li class="footer__list-item">
-            <a class="footer__social-link" href="#">
-              <img class="footer__social-icon" src="./images/instagram_white.svg" alt="">
-              Instagram
-            </a>
-          </li>
+    </header>
+    <main class="content">
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 class="section-title" id="skills-title">Habilidades y herramientas</h2>
+        <ul class="skills__list">
+          <li class="skills__item"><img class="skills__icon" src="./images/html.svg" alt="HTML5"></li>
+          <li class="skills__item"><img class="skills__icon" src="./images/css.svg" alt="CSS3"></li>
+          <li class="skills__item"><img class="skills__icon" src="./images/javascript.svg" alt="JavaScript: próximo paso de aprendizaje" title="JavaScript: próximo paso de aprendizaje"></li>
+          <li class="skills__item"><img class="skills__icon" src="./images/git.svg" alt="Git"></li>
+          <li class="skills__item"><img class="skills__icon" src="./images/github.svg" alt="GitHub"></li>
+          <li class="skills__item"><img class="skills__icon" src="./images/ai.svg" alt="ChatGPT"></li>
         </ul>
-      </div>
-    </div>
-    <p class="footer__copyright">© 2026 Dulce Agra</p>
-  </footer>
-</body>
+      </section>
+      <section class="projects" aria-labelledby="projects-title">
+        <h2 class="section-title" id="projects-title">Proyectos destacados</h2>
+        <div class="projects__list">
+          <article class="project">
+            <div class="project__media">
+              <img class="project__image" src="./images/coffee-shop.jpg" alt="Vista de la página web de la cafetería Triple Peaks">
+              <div class="project__veil" aria-hidden="true"></div>
+              <ul class="project__technologies" aria-label="Tecnologías del proyecto">
+                <li><img class="project__technology" src="./images/html.svg" alt="HTML5"></li>
+                <li><img class="project__technology" src="./images/css.svg" alt="CSS3"></li>
+              </ul>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Página web de una cafetería</h3>
+              <p class="project__description">Desarrollo de una landing page responsiva para una cafetería siguiendo un brief de diseño. Incluye estructura semántica, maquetación con Flexbox, creación de secciones nuevas y un formulario de contacto funcional.</p>
+              <p class="project__description">Logro: Implementé desde cero el diseño completo de la página, organicé el proyecto con buenas prácticas y publiqué la versión final utilizando GitHub Pages.</p>
+              <div class="project__links">
+                <a class="project__link" href="https://dulce152a.github.io/web_project_coffeeshop_es/"><img class="project__link-icon" src="./images/external.svg" alt="Icono de enlace externo">Demo en vivo</a>
+                <a class="project__link project__link_type_github" href="https://github.com/dulce152a/web_project_coffeeshop_es"><img class="project__link-icon" src="./images/github.svg" alt="Icono de GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project__media">
+              <img class="project__image" src="./images/project.jpg" alt="Ilustración de una ventana de código sobre fondo violeta">
+              <div class="project__veil" aria-hidden="true"></div>
+              <ul class="project__technologies" aria-label="Tecnologías del proyecto">
+                <li><img class="project__technology" src="./images/javascript.svg" alt="JavaScript"></li>
+                <li><img class="project__technology" src="./images/react.svg" alt="React"></li>
+              </ul>
+            </div>
+            <div class="project__body">
+              <h3 class="project__title">Mi proyecto</h3>
+              <p class="project__description">Descripción del proyecto</p>
+              <div class="project__links">
+                <a class="project__link" href="#"><img class="project__link-icon" src="./images/external.svg" alt="Icono de enlace externo">Demo en vivo</a>
+                <a class="project__link project__link_type_github" href="#"><img class="project__link-icon" src="./images/github.svg" alt="Icono de GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="contact" id="contact">
+      <h2 class="section-title">Contacto</h2>
+      <a class="contact__email" href="mailto:nextlevelxds@gmail.com">nextlevelxds@gmail.com</a>
+      <ul class="contact__socials">
+        <li><a class="contact__social-link" href="#" aria-label="LinkedIn"><img class="contact__social-icon" src="./images/linkedin.svg" alt="Icono de LinkedIn"></a></li>
+        <li><a class="contact__social-link" href="#" aria-label="Facebook"><img class="contact__social-icon" src="./images/facebook.svg" alt="Icono de Facebook"></a></li>
+        <li><a class="contact__social-link" href="#" aria-label="Instagram"><img class="contact__social-icon" src="./images/instagram.svg" alt="Icono de Instagram"></a></li>
+        <li><a class="contact__social-link" href="#" aria-label="X"><img class="contact__social-icon" src="./images/x.svg" alt="Icono de X"></a></li>
+      </ul>
+    </footer>
+  </body>
 </html>
